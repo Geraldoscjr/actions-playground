@@ -5,11 +5,11 @@ on:
   
 jobs:
   print_date_ubuntu:
-    name: Print date Ubuntu!
+    name: Print data Ubuntu!
     runs-on: ubuntu-latest
     
     steps:
-      - name: Print date Ubuntu!
+      - name: Print data Ubuntu!
         run: date
         
   print_date_windows:

@@ -7,7 +7,7 @@ jobs:
   cria_e_upload_artefato:
     name: "Cria artefato e faz upload"
   
-    runs-on: ubuntu-last
+    runs-on: ubuntu-ubuntu-latest
   
     steps:
       - name: checkout repository
@@ -16,6 +16,6 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
-          name: Repositorio do geraldo
+          name: ${{ vars.NOME_ARQUIVO_UPLOAD}}
           path: .
           retention-days: 15
